@@ -1,5 +1,6 @@
 class ConsumersController < ApplicationController
   before_action :set_consumer, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name: "client", password: "password"
   respond_to :json
 
   # GET /consumers

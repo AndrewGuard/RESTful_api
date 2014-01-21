@@ -1,6 +1,7 @@
 class FoodItemsController < ApplicationController
   before_action :set_food_item, only: [:show, :edit, :update, :destroy]
-
+  http_basic_authenticate_with name: "client", password: "password"
+  respond_to :json
   # GET /food_items
   # GET /food_items.json
   def index
