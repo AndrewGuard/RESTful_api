@@ -1,1 +1,1 @@
-A RESTful api
+A RESTful api deployed on heroku
