@@ -1,4 +1,10 @@
 SampleApp::Application.routes.draw do
+  resources :food_items
+
+  resources :restaurants
+
+  resources :consumers
+
   get "static_pages/home"
   get "static_pages/help"
   get "static_pages/about"
