@@ -1,12 +1,13 @@
 class ConsumersController < ApplicationController
   before_action :set_consumer, only: [:show, :edit, :update, :destroy]
   http_basic_authenticate_with name: "client", password: "password"
-  respond_to :json
+  respond_to :json, :html
 
   # GET /consumers
   # GET /consumers.json
   def index
     @consumers = Consumer.all
+    respond_with(@consumers)
   end
 
   # GET /consumers/1
