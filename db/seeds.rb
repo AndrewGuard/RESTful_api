@@ -25,14 +25,14 @@ restaurant2.name = 'Chinese food restaurant'
 restaurant2.save
 
 food_item1 = FoodItem.new
-food_item1.name = "name"
+food_item1.name = "Premium Pizza"
 food_item1.description = "delicious food"
 food_item1.consumer_id = 1
 food_item1.restaurant_id = 1
 food_item1.save
 
 food_item2 = FoodItem.new
-food_item2.name = "name"
+food_item2.name = "Kung Pao"
 food_item2.description = "delicious food"
 food_item2.consumer_id = 2
 food_item2.restaurant_id = 2
